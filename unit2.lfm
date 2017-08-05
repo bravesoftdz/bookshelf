@@ -1,0 +1,28 @@
+object dm: Tdm
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 223
+  HorizontalOffset = 1004
+  VerticalOffset = 201
+  Width = 115
+  object connection: TMySQL51Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    LogEvents = []
+    left = 35
+    top = 24
+  end
+  object transaction: TSQLTransaction
+    Active = False
+    Action = caNone
+    left = 35
+    top = 91
+  end
+  object query: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    left = 35
+    top = 160
+  end
+end

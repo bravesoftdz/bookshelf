@@ -1,0 +1,99 @@
+object Form1: TForm1
+  Left = 646
+  Height = 384
+  Top = 208
+  Width = 254
+  Caption = 'Kitaplık'
+  ClientHeight = 384
+  ClientWidth = 254
+  OnCreate = FormCreate
+  LCLVersion = '1.0.1.3'
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 352
+    Width = 75
+    Caption = 'Ekle'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 87
+    Height = 25
+    Top = 352
+    Width = 75
+    Caption = 'Listele'
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 8
+    Height = 25
+    Top = 86
+    Width = 75
+    Caption = 'Ara'
+    TabOrder = 2
+  end
+  object ComboBox1: TComboBox
+    Left = 9
+    Height = 21
+    Top = 56
+    Width = 100
+    ItemHeight = 13
+    Items.Strings = (
+      'Kitap Adı'
+      'Yazar'
+    )
+    TabOrder = 3
+    Text = '::::: Seçiniz :::::'
+  end
+  object Edit1: TEdit
+    Left = 9
+    Height = 21
+    Top = 24
+    Width = 208
+    TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 167
+    Height = 25
+    Top = 352
+    Width = 75
+    Caption = 'Kapat'
+    TabOrder = 5
+  end
+  object Ayarlar: TSpeedButton
+    Left = 220
+    Height = 22
+    Top = 24
+    Width = 23
+    NumGlyphs = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 9
+    Height = 224
+    Top = 120
+    Width = 233
+    Caption = 'Bilgiler'
+    TabOrder = 6
+  end
+  object MySQL51Connection1: TMySQL51Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    LogEvents = []
+    left = 208
+    top = 120
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Action = caNone
+    left = 208
+    top = 176
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    left = 208
+    top = 232
+  end
+end
